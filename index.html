@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kainat Afzal | Generative AI Engineer</title>
+    <meta name="description"
+        content="Kainat Afzal - Generative AI Engineer with 5+ years of experience in Machine Learning, Deep Learning, and AI Solutions.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles-redesign.css">
+    <link rel="stylesheet" href="enhanced-styles.css">
+</head>
+
+<body>
+    <!-- Cursor Glow Effect -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Animated Background -->
+    <div class="bg-effects">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+        <canvas id="particleCanvas"></canvas>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo"></a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="https://www.fiverr.com/s/xXxxLqa" target="_blank" class="btn-glow">
+                    <span class="btn-text"><i class="fas fa-rocket"></i> Hire Me</span>
+                    <span class="btn-shine"></span>
+                </a>
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge animate-fade-up">
+                    <span class="badge-pulse"></span>
+                    <i class="fas fa-microchip"></i>
+                    <span>AI/ML Engineer</span>
+                </div>
+
+                <h1 class="hero-title animate-fade-up delay-1">
+                    <span class="title-line">Hi, I'm</span>
+                    <span class="title-name">
+                        <span class="text-gradient">Kainat Afzal</span>
+                        <svg class="name-underline" viewBox="0 0 300 12">
+                            <path d="M0 6 Q75 0 150 6 T300 6" stroke="url(#gradient)" stroke-width="3" fill="none" />
+                            <defs>
+                                <linearGradient id="gradient">
+                                    <stop offset="0%" stop-color="#6366f1" />
+                                    <stop offset="100%" stop-color="#ec4899" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </span>
+                    <span class="title-role">
+                        <span class="typing-text" id="typingText"></span>
+                        <span class="typing-cursor">|</span>
+                    </span>
+                </h1>
+
+                <div class="hero-info animate-fade-up delay-3">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Islamabad, Pakistan</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:kainatafzal195@gmail.com">kainatafzal195@gmail.com</a>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:+923078944506">+92 307 8944506</a>
+                    </div>
+                </div>
+
+                <div class="hero-stats animate-fade-up delay-4">
+                    <div class="stat-card">
+                        <div class="stat-number" data-count="5">0</div>
+                        <div class="stat-label">Years Exp</div>
+                        <div class="stat-glow"></div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-count="50">0</div>
+                        <div class="stat-label">Projects</div>
+                        <div class="stat-glow"></div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-count="30">0</div>
+                        <div class="stat-label">Clients</div>
+                        <div class="stat-glow"></div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-count="4">0</div>
+                        <div class="stat-label">Companies</div>
+                        <div class="stat-glow"></div>
+                    </div>
+                </div>
+
+                <div class="hero-buttons animate-fade-up delay-5">
+                    <a href="#projects" class="btn-primary">
+                        <span>View Projects</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="Kainat(AI_Engineer).pdf" download class="btn-outline">
+                        <i class="fas fa-download"></i>
+                        <span>Download CV</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/kainat-afzal-597702251/" target="_blank" class="btn-social">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com" target="_blank" class="btn-social">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="ai-sphere">
+                    <div class="sphere-rings">
+                        <div class="ring ring-1"></div>
+                        <div class="ring ring-2"></div>
+                        <div class="ring ring-3"></div>
+                    </div>
+                    <div class="avatar-wrapper">
+                        <div class="avatar-glow"></div>
+                        <img src="my_img.jpg" alt="Kainat Afzal" class="avatar-image">
+                        <div class="avatar-border"></div>
+                    </div>
+                    <div class="floating-icons">
+                        <div class="float-icon icon-1"><i class="fab fa-python"></i></div>
+                        <div class="float-icon icon-2"><i class="fas fa-brain"></i></div>
+                        <div class="float-icon icon-3"><i class="fas fa-robot"></i></div>
+                        <div class="float-icon icon-4"><i class="fas fa-database"></i></div>
+                        <div class="float-icon icon-5"><i class="fas fa-code"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-user-astronaut"></i> About Me</span>
+            </div>
+
+            <div class="about-grid">
+                <!-- Professional Summary -->
+                <div class="about-content glass-card">
+                    <div class="about-text">
+                    <p class="about-intro">I'm a <strong>Generative AI Engineer</strong> with <span class="highlight">5+ years</span> of experience specializing in Machine Learning and Artificial Intelligence. As an AI Visionary & Problem Solver, I transform complex challenges into intelligent solutions that deliver real-world impact and business transformation. I build production-ready AI systems—from LLM-powered applications to computer vision solutions—that solve real-world problems using cutting-edge technologies and deliver measurable business impact.</p>
+                    </div>
+
+                    <div class="tech-stack">
+                        <h4><i class="fas fa-layer-group"></i> Core Technologies</h4>
+                        <div class="tech-icons">
+                            <div class="tech-icon" data-tooltip="Python"><i class="fab fa-python"></i></div>
+                            <div class="tech-icon" data-tooltip="TensorFlow"><img
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg"
+                                    alt="TensorFlow"></div>
+                            <div class="tech-icon" data-tooltip="PyTorch"><img
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg"
+                                    alt="PyTorch"></div>
+                            <div class="tech-icon" data-tooltip="OpenAI"><i class="fas fa-robot"></i></div>
+                            <div class="tech-icon" data-tooltip="Docker"><i class="fab fa-docker"></i></div>
+                            <div class="tech-icon" data-tooltip="AWS"><i class="fab fa-aws"></i></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education & Achievements -->
+                <div class="education-card glass-card">
+                    <div class="edu-header">
+                        <div class="edu-icon">
+                            <div class="icon-bg">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="icon-ring"></div>
+                        </div>
+                        <div class="edu-badge">
+                            <span class="excellence-badge">Academic Excellence</span>
+                        </div>
+                    </div>
+                    
+                    <div class="edu-content">
+                        <h3>Education</h3>
+                        <div class="edu-institution">University of Engineering and Technology (UET), Taxila</div>
+                        <div class="edu-degree">Bachelor of Science in Computer Engineering</div>
+                        
+                        <div class="edu-achievements">
+                            <div class="achievement-item">
+                                <i class="fas fa-star"></i>
+                                <span><strong>GPA: 3.45/4.0</strong></span>
+                            </div>
+                            <div class="achievement-item">
+                                <i class="fas fa-medal"></i>
+                                <span>Top 10% of Class</span>
+                            </div>
+                        </div>
+
+                        <div class="edu-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-calendar"></i>
+                                <span>2018 - 2022</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-location-dot"></i>
+                                <span>Taxila, Pakistan</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Client & Project Statistics -->
+            <div class="stats-grid">
+                <div class="stat-card-large glass-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-smile"></i>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-number-large" data-count="30">0</div>
+                        <div class="stat-label-large">Happy Clients</div>
+                        <div class="stat-description">I've had the privilege of working with over 30 satisfied clients worldwide, delivering smart AI solutions that exceed expectations and drive real value.</div>
+                    </div>
+                </div>
+                
+                <div class="stat-card-large glass-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-number-large" data-count="50">0</div>
+                        <div class="stat-label-large">Projects Completed</div>
+                        <div class="stat-description">Successfully completed 50+ projects across various industries—each tailored to meet specific goals with innovation, precision, and reliability.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience-section" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-briefcase"></i> Career</span>
+                <h2 class="section-title">Professional <span class="text-gradient">Experience</span></h2>
+                <p class="section-subtitle">My journey in the AI/ML industry</p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-line"></div>
+
+                <!-- Experience 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                        <div class="marker-pulse"></div>
+                    </div>
+                    <div class="timeline-content glass-card">
+                        <div class="exp-header">
+                            <span class="exp-date">Oct 2025 - Present</span>
+                            <span class="exp-status current">Current</span>
+                        </div>
+                        <h3>Generative AI Engineer</h3>
+                        <div class="exp-company"><i class="fas fa-building"></i> Mobify – Islamabad, Pakistan</div>
+                        <ul class="exp-duties">
+                            <li>Developed AI-powered applications utilizing LLMs, vision models, and speech technologies
+                            </li>
+                            <li>Built scalable NLP pipelines, conversational agents, and image filtering tools</li>
+                            <li>Created production-ready REST APIs with FastAPI/Django</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                    </div>
+                    <div class="timeline-content glass-card">
+                        <div class="exp-header">
+                            <span class="exp-date">Apr 2025 - Sep 2025</span>
+                        </div>
+                        <h3>Generative AI Engineer</h3>
+                        <div class="exp-company"><i class="fas fa-building"></i> Alright Tech Private Limited –
+                            Islamabad</div>
+                        <ul class="exp-duties">
+                            <li>End-to-end deployment of Generative AI systems</li>
+                            <li>Building intelligent applications integrating LLMs with production APIs</li>
+                            <li>Designing pipelines for scalable data ingestion and response generation</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                    </div>
+                    <div class="timeline-content glass-card">
+                        <div class="exp-header">
+                            <span class="exp-date">Nov 2023 - May 2025</span>
+                        </div>
+                        <h3>AI/ML Engineer</h3>
+                        <div class="exp-company"><i class="fas fa-building"></i> NKU Technologies Pvt Ltd. – Lahore
+                        </div>
+                        <ul class="exp-duties">
+                            <li>Designed and deployed AI solutions to enhance product performance</li>
+                            <li>Optimized deep learning models for real-time insights and forecasting</li>
+                            <li>Built chatbots, recommendation systems, and computer vision applications</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience 4 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                    </div>
+                    <div class="timeline-content glass-card">
+                        <div class="exp-header">
+                            <span class="exp-date">Aug 2022 - Sep 2023</span>
+                        </div>
+                        <h3>Machine Learning Engineer</h3>
+                        <div class="exp-company"><i class="fas fa-building"></i> Data Science Innovation Hub (DISH), UET
+                            – Rawalpindi</div>
+                        <ul class="exp-duties">
+                            <li>Processed large datasets and built ML pipelines for predictive modeling</li>
+                            <li>Conducted AI research and developed real-world NLP applications</li>
+                            <li>Explored advanced AI tools, models, and techniques</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-section" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-cogs"></i> Expertise</span>
+                <h2 class="section-title">Technical <span class="text-gradient">Skills</span></h2>
+                <p class="section-subtitle">Technologies I work with to build intelligent solutions</p>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Skill Card 1 -->
+                <div class="skill-card glass-card" data-tilt>
+                    <div class="skill-header">
+                        <div class="skill-icon gradient-1">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>Machine Learning</h3>
+                    </div>
+                    <p>Deep Learning, Neural Networks, Model Training & Optimization</p>
+                    <div class="skill-tags">
+                        <span class="tag">TensorFlow</span>
+                        <span class="tag">PyTorch</span>
+                        <span class="tag">Scikit-learn</span>
+                        <span class="tag">Keras</span>
+                        <span class="tag">XGBoost</span>
+                        <span class="tag">LightGBM</span>
+                    </div>
+                    <div class="skill-level">
+                        <div class="level-bar" style="--level: 95%"></div>
+                    </div>
+                </div>
+
+                <!-- Skill Card 2 -->
+                <div class="skill-card glass-card" data-tilt>
+                    <div class="skill-header">
+                        <div class="skill-icon gradient-2">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3>Generative AI</h3>
+                    </div>
+                    <p>LLMs, RAG Systems, Prompt Engineering, AI Agents</p>
+                    <div class="skill-tags">
+                        <span class="tag">OpenAI</span>
+                        <span class="tag">LangChain</span>
+                        <span class="tag">Hugging Face</span>
+                        <span class="tag">GPT-4</span>
+                        <span class="tag">DALL·E</span>
+                        <span class="tag">Flux</span>
+                        <span class="tag">Claude</span>
+                        <span class="tag">Gemini</span>
+                    </div>
+                    <div class="skill-level">
+                        <div class="level-bar" style="--level: 92%"></div>
+                    </div>
+                </div>
+
+                <!-- Skill Card 3 -->
+                <div class="skill-card glass-card" data-tilt>
+                    <div class="skill-header">
+                        <div class="skill-icon gradient-3">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Development</h3>
+                    </div>
+                    <p>Full-stack AI Application Development & Deployment</p>
+                    <div class="skill-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">FastAPI</span>
+                        <span class="tag">Flask</span>
+                        <span class="tag">Django</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">AWS</span>
+                        <span class="tag">Kubernetes</span>
+                        <span class="tag">Terraform</span>
+                    </div>
+                    <div class="skill-level">
+                        <div class="level-bar" style="--level: 90%"></div>
+                    </div>
+                </div>
+
+                <!-- Skill Card 4 -->
+                <div class="skill-card glass-card" data-tilt>
+                    <div class="skill-header">
+                        <div class="skill-icon gradient-4">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h3>Computer Vision</h3>
+                    </div>
+                    <p>Image Processing, Object Detection, Segmentation</p>
+                    <div class="skill-tags">
+                        <span class="tag">OpenCV</span>
+                        <span class="tag">YOLO</span>
+                        <span class="tag">CNN</span>
+                        <span class="tag">Transformers</span>
+                        <span class="tag">Face Recognition</span>
+                        <span class="tag">Image Segmentation</span>
+                    </div>
+                    <div class="skill-level">
+                        <div class="level-bar" style="--level: 88%"></div>
+                    </div>
+                </div>
+
+                <!-- Skill Card 5 -->
+                <div class="skill-card glass-card" data-tilt>
+                    <div class="skill-header">
+                        <div class="skill-icon gradient-5">
+                            <i class="fas fa-language"></i>
+                        </div>
+                        <h3>NLP</h3>
+                    </div>
+                    <p>Natural Language Processing & Understanding</p>
+                    <div class="skill-tags">
+                        <span class="tag">BERT</span>
+                        <span class="tag">spaCy</span>
+                        <span class="tag">NLTK</span>
+                        <span class="tag">Transformers</span>
+                        <span class="tag">Text Classification</span>
+                        <span class="tag">Sentiment Analysis</span>
+                    </div>
+                    <div class="skill-level">
+                        <div class="level-bar" style="--level: 87%"></div>
+                    </div>
+                </div>
+
+                <!-- Skill Card 6 -->
+                <div class="skill-card glass-card" data-tilt>
+                    <div class="skill-header">
+                        <div class="skill-icon gradient-6">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>Data Engineering</h3>
+                    </div>
+                    <p>Data Pipeline, ETL, Vector Databases</p>
+                    <div class="skill-tags">
+                        <span class="tag">Pandas</span>
+                        <span class="tag">SQL</span>
+                        <span class="tag">Pinecone</span>
+                        <span class="tag">FAISS</span>
+                        <span class="tag">ChromaDB</span>
+                        <span class="tag">MongoDB</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">Redis</span>
+                    </div>
+                    <div class="skill-level">
+                        <div class="level-bar" style="--level: 85%"></div>
+                    </div>
+                </div>
+
+                <!-- Skill Card 7 -->
+                <div class="skill-card glass-card" data-tilt>
+                    <div class="skill-header">
+                        <div class="skill-icon gradient-1">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3>AI Automation</h3>
+                    </div>
+                    <p>Workflow Automation, n8n, AI-Powered Workflows</p>
+                    <div class="skill-tags">
+                        <span class="tag">n8n</span>
+                        <span class="tag">Zapier</span>
+                        <span class="tag">Make.com</span>
+                        <span class="tag">Workflow Automation</span>
+                        <span class="tag">API Integration</span>
+                        <span class="tag">Task Automation</span>
+                    </div>
+                    <div class="skill-level">
+                        <div class="level-bar" style="--level: 89%"></div>
+                    </div>
+                </div>
+
+                <!-- Skill Card 8 -->
+                <div class="skill-card glass-card" data-tilt>
+                    <div class="skill-header">
+                        <div class="skill-icon gradient-2">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Agentic AI</h3>
+                    </div>
+                    <p>AI Agents, Multi-Agent Systems, Autonomous AI</p>
+                    <div class="skill-tags">
+                        <span class="tag">AI Agents</span>
+                        <span class="tag">Multi-Agent Systems</span>
+                        <span class="tag">Autonomous AI</span>
+                        <span class="tag">Agent Orchestration</span>
+                        <span class="tag">ReAct Framework</span>
+                        <span class="tag">Tool Use</span>
+                    </div>
+                    <div class="skill-level">
+                        <div class="level-bar" style="--level: 86%"></div>
+                    </div>
+                </div>
+
+                <!-- Skill Card 9 -->
+                <div class="skill-card glass-card" data-tilt>
+                    <div class="skill-header">
+                        <div class="skill-icon gradient-3">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>AI/ML Operations</h3>
+                    </div>
+                    <p>Model Deployment, MLOps, AI Infrastructure</p>
+                    <div class="skill-tags">
+                        <span class="tag">MLOps</span>
+                        <span class="tag">Model Deployment</span>
+                        <span class="tag">Model Monitoring</span>
+                        <span class="tag">A/B Testing</span>
+                        <span class="tag">CI/CD</span>
+                        <span class="tag">Model Versioning</span>
+                    </div>
+                    <div class="skill-level">
+                        <div class="level-bar" style="--level: 84%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-rocket"></i> Portfolio</span>
+                <h2 class="section-title">Featured <span class="text-gradient">Projects</span></h2>
+                <p class="section-subtitle">Production-ready AI builds across Generative AI, Computer Vision, NLP, and Analytics</p>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1: JSSL Football League Bot -->
+                <div class="project-card glass-card" data-category="genai">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1575361204480-aadea25e6e68?w=800&q=80" alt="JSSL Football League Bot">
+                        <div class="project-overlay">
+                            <a href="projects/jssl-football-bot.html" class="project-link"><i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Generative AI</div>
+                        <h3>JSSL Football League Bot</h3>
+                        <p>AI-powered conversational assistant for football registration, camp sign-ups, and FAQs.</p>
+                        <div class="project-tech">
+                            <span>Voiceflow</span>
+                            <span>Twilio</span>
+                            <span>SendGrid</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: ALEX RAG Bot -->
+                <div class="project-card glass-card" data-category="genai">
+                    <div class="project-image">
+                        <img src="images/rag_chatbot_project_1767792137965.png" alt="ALEX RAG Bot">
+                        <div class="project-overlay">
+                            <a href="projects/alex-rag-bot.html" class="project-link"><i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Generative AI</div>
+                        <h3>ALEX RAG Bot</h3>
+                        <p>Multi-agent RAG chatbot platform with vector search and OpenAI for domain-specific answers.</p>
+                        <div class="project-tech">
+                            <span>OpenAI</span>
+                            <span>RAG</span>
+                            <span>LangChain</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Face Swap Application -->
+                <div class="project-card glass-card" data-category="cv">
+                    <div class="project-image">
+                        <img src="images/face_swap_project_1767792121491.png" alt="Face Swap Application">
+                        <div class="project-overlay">
+                            <a href="projects/face-swap.html" class="project-link"><i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Computer Vision</div>
+                        <h3>Face Swap Application</h3>
+                        <p>Face swapping for images and videos using Stable Diffusion and Flux with FastAPI.</p>
+                        <div class="project-tech">
+                            <span>Stable Diffusion</span>
+                            <span>Flux</span>
+                            <span>FastAPI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Pencil Sketch -->
+                <div class="project-card glass-card" data-category="cv">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=800&q=80" alt="Pencil Sketch">
+                        <div class="project-overlay">
+                            <a href="projects/pencil-sketch.html" class="project-link"><i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Computer Vision</div>
+                        <h3>Pencil Sketch Generator</h3>
+                        <p>AI-powered system for converting images into artistic pencil sketches.</p>
+                        <div class="project-tech">
+                            <span>Image Processing</span>
+                            <span>Deep Learning</span>
+                            <span>OpenCV</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5: Job Assistant Automation -->
+                <div class="project-card glass-card project-hidden" data-category="genai">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80" alt="Job Assistant Automation">
+                        <div class="project-overlay">
+                            <a href="projects/job-assistant-automation.html" class="project-link"><i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Generative AI</div>
+                        <h3>Job Assistant Automation</h3>
+                        <p>AI-powered workflow for job data collection, analysis, and communication automation.</p>
+                        <div class="project-tech">
+                            <span>n8n</span>
+                            <span>Telegram Bot</span>
+                            <span>OpenAI API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6: Messy Bible AI -->
+                <div class="project-card glass-card project-hidden" data-category="genai">
+                    <div class="project-image">
+                        <img src="images/messy_bible_ai.png" alt="Messy Bible AI">
+                        <div class="project-overlay">
+                            <a href="projects/messy-bible-ai.html" class="project-link"><i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Generative AI</div>
+                        <h3>Messy Bible AI</h3>
+                        <p>AI-powered Bible study and content generation platform with RAG system.</p>
+                        <div class="project-tech">
+                            <span>OpenAI GPT</span>
+                            <span>RAG System</span>
+                            <span>Flask/FastAPI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 7: Real Estate Bot -->
+                <div class="project-card glass-card project-hidden" data-category="genai">
+                    <div class="project-image">
+                        <img src="images/real_estate_bot.png" alt="Real Estate Bot">
+                        <div class="project-overlay">
+                            <a href="projects/real-estate-bot.html" class="project-link"><i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Generative AI</div>
+                        <h3>Real Estate Bot</h3>
+                        <p>AI-powered real estate lead qualification and scheduling system.</p>
+                        <div class="project-tech">
+                            <span>Voiceflow</span>
+                            <span>Twilio</span>
+                            <span>Make.com</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 8: X-ray Foot Annotation -->
+                <div class="project-card glass-card project-hidden" data-category="cv">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551601651-2a8555f1a136?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="X-ray Foot Annotation">
+                        <div class="project-overlay">
+                            <a href="projects/xray-foot-annotation.html" class="project-link"><i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Computer Vision</div>
+                        <h3>X-ray Foot Annotation</h3>
+                        <p>AI-powered medical imaging analysis system for foot X-ray annotation.</p>
+                        <div class="project-tech">
+                            <span>ResNet-18</span>
+                            <span>TensorFlow/Keras</span>
+                            <span>OpenCV</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 9: Marketplace Forecasting -->
+                <div class="project-card glass-card project-hidden" data-category="analytics">
+                    <div class="project-image">
+                        <img src="images/forecasting_project_1767792204675.png" alt="Marketplace Forecasting">
+                        <div class="project-overlay">
+                            <a href="projects/marketplace-forecasting.html" class="project-link"><i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Analytics</div>
+                        <h3>Marketplace Forecasting</h3>
+                        <p>Multi-method time-series analysis for revenue and unit sold forecasting.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Time-Series</span>
+                            <span>Forecasting</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 10: Exam Preparation Bot -->
+                <div class="project-card glass-card project-hidden" data-category="genai">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=800&q=80" alt="Exam Preparation Bot">
+                        <div class="project-overlay">
+                            <a href="projects/nursing-exam-prep.html" class="project-link"><i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Generative AI</div>
+                        <h3>Exam Preparation Bot</h3>
+                        <p>AI-powered educational platform for exam preparation with flashcards and quizzes.</p>
+                        <div class="project-tech">
+                            <span>AI Learning</span>
+                            <span>Education</span>
+                            <span>Quiz System</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects-cta">
+                <button class="btn-primary" id="showAllProjectsBtn">
+                    <span id="showAllBtnText">Show All Projects</span>
+                    <i class="fas fa-chevron-down" id="showAllBtnIcon"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-comments"></i> Client Feedback</span>
+                <h2 class="section-title">What Clients <span class="text-gradient">Say</span></h2>
+                <p class="section-subtitle">Trusted by startups, enterprises, and individuals worldwide</p>
+            </div>
+
+            <div class="testimonials-grid" id="testimonialsGrid">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card glass-card">
+                    <div class="testimonial-header">
+                        <div class="client-icon gradient-1">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div class="client-info">
+                            <h4>edward_adams1</h4>
+                            <div class="client-position">Austria</div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">"Delivered high-quality work on time, great communication, and very professional. Highly recommended!"</p>
+                    </div>
+                    
+                    <div class="client-details">
+                        <div class="client-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Austria
+                        </div>
+                        <div class="client-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card glass-card">
+                    <div class="testimonial-header">
+                        <div class="client-icon gradient-2">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="client-info">
+                            <h4>ebereokwudili</h4>
+                            <div class="client-position">United Kingdom</div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">"Provided exactly what I needed. Was very cooperative throughout and delivered high quality work in quite a short time. Would definitely recommend. Will definitely use this service again in the future!"</p>
+                    </div>
+                    
+                    <div class="client-details">
+                        <div class="client-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            United Kingdom
+                        </div>
+                        <div class="client-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card glass-card">
+                    <div class="testimonial-header">
+                        <div class="client-icon gradient-3">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <div class="client-info">
+                            <h4>ShahFaisal</h4>
+                            <div class="client-position">Saudi Arabia</div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">"Excellent work! The face recognition system is highly accurate and works flawlessly. Very professional and skilled seller. Highly recommended!"</p>
+                    </div>
+                    
+                    <div class="client-details">
+                        <div class="client-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Saudi Arabia
+                        </div>
+                        <div class="client-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hidden Testimonials (will be revealed on "Read All" click) -->
+                <div class="testimonial-card glass-card hidden" id="testimonial4">
+                    <div class="testimonial-header">
+                        <div class="client-icon gradient-4">
+                            <i class="fas fa-smile"></i>
+                        </div>
+                        <div class="client-info">
+                            <h4>sk_1999</h4>
+                            <div class="client-position">Turkey</div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">"amazing hard working man, great service and fast response time."</p>
+                    </div>
+                    
+                    <div class="client-details">
+                        <div class="client-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Turkey
+                        </div>
+                        <div class="client-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card glass-card hidden" id="testimonial5">
+                    <div class="testimonial-header">
+                        <div class="client-icon gradient-5">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="client-info">
+                            <h4>Salmaa</h4>
+                            <div class="client-position">United Kingdom</div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">"It was great work he is an expert 🔥"</p>
+                    </div>
+                    
+                    <div class="client-details">
+                        <div class="client-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            United Kingdom
+                        </div>
+                        <div class="client-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card glass-card hidden" id="testimonial6">
+                    <div class="testimonial-header">
+                        <div class="client-icon gradient-6">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <div class="client-info">
+                            <h4>Mena Abdelsayed</h4>
+                            <div class="client-position">United States</div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">"You are very talented and hard working woman I ever met. God bless. Truly recommended!"</p>
+                    </div>
+                    
+                    <div class="client-details">
+                        <div class="client-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            United States
+                        </div>
+                        <div class="client-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card glass-card hidden" id="testimonial7">
+                    <div class="testimonial-header">
+                        <div class="client-icon gradient-7">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="client-info">
+                            <h4>Kilian</h4>
+                            <div class="client-position">France</div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">"Great work, Kainat! Really impressive and truly appreciated — highly recommended! 🌟"</p>
+                    </div>
+                    
+                    <div class="client-details">
+                        <div class="client-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            France
+                        </div>
+                        <div class="client-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonials-cta">
+                <button class="btn-primary" id="toggleTestimonialsBtn">
+                    <span id="toggleBtnText">Read All Testimonials</span>
+                    <i class="fas fa-chevron-down" id="toggleBtnIcon"></i>
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-paper-plane"></i> Get In Touch</span>
+                <h2 class="section-title">Let's <span class="text-gradient">Connect</span></h2>
+                <p class="section-subtitle">Ready to collaborate on your next AI project?</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-card glass-card">
+                    <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                    <h4>Email</h4>
+                    <a href="mailto:kainatafzal195@gmail.com">kainatafzal195@gmail.com</a>
+                </div>
+                <div class="contact-card glass-card">
+                    <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                    <h4>Phone</h4>
+                    <a href="tel:+923078944506">+92 307 8944506</a>
+                </div>
+                <div class="contact-card glass-card">
+                    <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+                    <h4>LinkedIn</h4>
+                    <a href="https://www.linkedin.com/in/kainat-afzal-597702251/" target="_blank">Connect with me</a>
+                </div>
+                <div class="contact-card glass-card">
+                    <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <h4>Location</h4>
+                    <span>Islamabad, Pakistan</span>
+                </div>
+                <div class="contact-card glass-card">
+                    <div class="contact-icon"><i class="fab fa-github"></i></div>
+                    <h4>GitHub</h4>
+                    <a href="https://github.com" target="_blank">View my code</a>
+                </div>
+                <div class="contact-card glass-card">
+                    <div class="contact-icon"><i class="fas fa-briefcase"></i></div>
+                    <h4>Fiverr</h4>
+                    <a href="https://www.fiverr.com/s/xXxxLqa" target="_blank">Hire me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo"></div>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/kainat-afzal-597702251/" target="_blank"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.fiverr.com/s/xXxxLqa" target="_blank"><i class="fas fa-briefcase"></i></a>
+                    <a href="mailto:kainatafzal195@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+                <p class="footer-text">© 2026 Kainat Afzal. Crafted with <i class="fas fa-heart"></i> and AI</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script-redesign.js"></script>
+</body>
+
+</html>

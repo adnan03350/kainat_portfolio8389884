@@ -1,0 +1,15 @@
+{
+  "name": "kainat-portfolio",
+  "version": "1.0.0",
+  "description": "Kainat Afzal - Generative AI Engineer Portfolio",
+  "scripts": {
+    "dev": "python -m http.server 8000"
+  },
+  "keywords": [
+    "portfolio",
+    "ai",
+    "machine-learning"
+  ],
+  "author": "Kainat Afzal",
+  "license": "MIT"
+}

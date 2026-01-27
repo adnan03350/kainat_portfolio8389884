@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ALEX RAG Bot - Portfolio</title>
+    <link rel="stylesheet" href="project-styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="project-container fade-in">
+      <header class="project-header">
+        <h1 class="project-title">ALEX RAG Bot</h1>
+        <p class="project-subtitle">Multi-Agent RAG Chatbot API Platform</p>
+      </header>
+
+      <div class="project-content">
+        <div class="project-info slide-in-left">
+          <h2 class="section-title">
+            <i class="fas fa-info-circle"></i>Project Overview
+          </h2>
+          <p class="project-description">
+            The <span class="highlight">ALEX_RAG_BOT</span> is a
+            <span class="highlight">Retrieval-Augmented Generation (RAG)</span>
+            chatbot platform built with <span class="highlight">FastAPI</span>,
+            designed to register multiple AI bots—each with its own
+            <span class="highlight">unique system prompt</span>,
+            <span class="highlight">vectorstore</span>, and
+            <span class="highlight">contextual document base</span>. This
+            architecture allows every bot to maintain personalized knowledge and
+            respond contextually to user queries based on its assigned dataset.
+          </p>
+
+          <h3 class="section-title">
+            <i class="fas fa-cogs"></i>Technologies Used
+          </h3>
+          <div class="technologies-grid">
+            <span class="tech-tag">Python (FastAPI)</span>
+            <span class="tech-tag">FAISS Vector DB</span>
+            <span class="tech-tag">SQLite</span>
+            <span class="tech-tag">OpenAI GPT</span>
+            <span class="tech-tag">LangChain</span>
+            <span class="tech-tag">Embeddings</span>
+          </div>
+
+          <h3 class="section-title"><i class="fas fa-star"></i>Key Features</h3>
+          <ul class="features-list">
+            <li>
+              <strong>🧩 Bot Registration:</strong> Create and manage multiple
+              bots, each with unique system prompt and identity
+            </li>
+            <li>
+              <strong>📄 Document Upload:</strong> Attach files (e.g., PDFs) to
+              bots for context-based querying
+            </li>
+            <li>
+              <strong>🧠 RAG Pipeline:</strong> Uses FAISS embeddings to
+              retrieve contextual information for GPT responses
+            </li>
+            <li>
+              <strong>⚙️ Prompt Management:</strong> Update and store system
+              prompts for each bot
+            </li>
+            <li>
+              <strong>💬 Chat Completion API:</strong> Generate AI-driven,
+              context-aware responses per bot
+            </li>
+            <li>
+              <strong>💾 Persistent Storage:</strong> SQLite database for bot
+              profiles and prompts
+            </li>
+            <li>
+              <strong>📚 Modular Architecture:</strong> Separate routes,
+              services, and utilities for scalability
+            </li>
+          </ul>
+
+          <h3 class="section-title">
+            <i class="fas fa-folder-open"></i>Project Structure
+          </h3>
+          <ul class="features-list">
+            <li><strong>main.py</strong> - FastAPI entrypoint</li>
+            <li>
+              <strong>database.py</strong> - Bot registration and prompt
+              management
+            </li>
+            <li>
+              <strong>routes/</strong> - Endpoints: upload, chat, list, delete
+            </li>
+            <li>
+              <strong>services/</strong> - Vector DB, embeddings, RAG pipeline
+              logic
+            </li>
+            <li>
+              <strong>utils/</strong> - Configurations and helper functions
+            </li>
+            <li><strong>vectorstores/</strong> - FAISS indexes per bot</li>
+          </ul>
+
+          <div class="impact-section">
+            <h3 class="impact-title">Business Impact</h3>
+            <p>
+              This project demonstrates the ability to build multi-tenant RAG
+              chat systems capable of personalized AI agents, each with distinct
+              prompts and contextual knowledge bases. It can easily be extended
+              for enterprise AI assistants, customer support bots, or
+              knowledge-based automation tools.
+            </p>
+          </div>
+        </div>
+
+        <div class="project-media slide-in-right">
+          <h2 class="section-title">
+            <i class="fas fa-images"></i>System Interfaces
+          </h2>
+          <div class="media-gallery">
+            <div class="gallery-item">
+              <img
+                src="../project-details/ALEX_RAG_BOT/1.png"
+                alt="Project Structure"
+              />
+            </div>
+            <div class="gallery-item">
+              <img
+                src="../project-details/ALEX_RAG_BOT/2.png"
+                alt="API Endpoints"
+              />
+            </div>
+            <div class="gallery-item">
+              <img src="../project-details/ALEX_RAG_BOT/3.png" alt="Register Bot" />
+            </div>
+            <div class="gallery-item">
+              <img src="../project-details/ALEX_RAG_BOT/4.png" alt="Set Prompt" />
+            </div>
+            <div class="gallery-item">
+              <img src="../project-details/ALEX_RAG_BOT/5.png" alt="Upload PDF" />
+            </div>
+            <div class="gallery-item">
+              <img
+                src="../project-details/ALEX_RAG_BOT/6.png"
+                alt="Chat Interface"
+              />
+            </div>
+          </div>
+
+          <h3 class="section-title">
+            <i class="fas fa-code"></i>API Endpoints
+          </h3>
+          <p>
+            The system provides comprehensive endpoints for bot management,
+            document processing, and conversational interactions, all documented
+            through Swagger UI for easy integration and testing.
+          </p>
+        </div>
+      </div>
+
+      <a href="../index.html#projects" class="back-button">
+        <i class="fas fa-arrow-left"></i> Back to Portfolio
+      </a>
+    </div>
+  </body>
+</html>

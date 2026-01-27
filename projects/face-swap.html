@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Face Swap Application - Portfolio</title>
+    <link rel="stylesheet" href="project-styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="project-container fade-in">
+      <header class="project-header">
+        <h1 class="project-title">Face Swap Application</h1>
+        <p class="project-subtitle">AI-Powered Face Swapping for Images and Videos</p>
+      </header>
+
+      <div class="project-content">
+        <div class="project-info slide-in-left">
+          <h2 class="section-title">
+            <i class="fas fa-info-circle"></i>Project Overview
+          </h2>
+          <p class="project-description">
+            The <span class="highlight">Face Swap Application</span> is an advanced AI-powered tool that enables 
+            seamless face swapping in both images and short videos. Built using cutting-edge 
+            <span class="highlight">Generative AI models</span> including <span class="highlight">Stable Diffusion</span> 
+            and <span class="highlight">Flux</span>, this project leverages open-source Hugging Face models to deliver 
+            high-quality, realistic face transformations.
+          </p>
+
+          <h3 class="section-title">
+            <i class="fas fa-cogs"></i>Technologies Used
+          </h3>
+          <div class="technologies-grid">
+            <span class="tech-tag">Stable Diffusion</span>
+            <span class="tech-tag">Flux</span>
+            <span class="tech-tag">FastAPI</span>
+            <span class="tech-tag">Hugging Face</span>
+            <span class="tech-tag">OpenCV</span>
+            <span class="tech-tag">PyTorch</span>
+          </div>
+
+          <h3 class="section-title"><i class="fas fa-star"></i>Key Features</h3>
+          <ul class="features-list">
+            <li>
+              <strong>🖼️ Image Face Swapping:</strong> High-quality face replacement in static images with natural blending
+            </li>
+            <li>
+              <strong>🎬 Video Processing:</strong> Frame-by-frame face swapping for short videos (5-6 seconds)
+            </li>
+            <li>
+              <strong>🔌 RESTful API:</strong> Easy-to-integrate endpoints for image and video processing
+            </li>
+            <li>
+              <strong>⚡ Real-time Processing:</strong> Optimized inference pipeline for quick results
+            </li>
+            <li>
+              <strong>🎯 Facial Feature Preservation:</strong> Maintains expressions, angles, and lighting conditions
+            </li>
+          </ul>
+
+          <div class="impact-section">
+            <h3 class="impact-title">Business Impact</h3>
+            <p>
+              This project demonstrates the practical application of Generative AI in computer vision and opens 
+              possibilities for creative content generation, entertainment applications, and digital media production. 
+              The FastAPI implementation ensures scalability and easy integration into various applications.
+            </p>
+          </div>
+        </div>
+
+        <div class="project-media slide-in-right">
+          <h2 class="section-title">
+            <i class="fas fa-images"></i>Input & Output Examples
+          </h2>
+          <div class="media-gallery">
+            <div class="gallery-item">
+              <img
+                src="../project-details/Face_swap/1.png"
+                alt="Input Image"
+              />
+              <p class="gallery-caption">Input Image</p>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="../project-details/Face_swap/2.jpg"
+                alt="Output Result"
+              />
+              <p class="gallery-caption">Face Swapped Output</p>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="../project-details/Face_swap/3.jpg"
+                alt="Another Example"
+              />
+              <p class="gallery-caption">Processed Result</p>
+            </div>
+          </div>
+
+          <h3 class="section-title">
+            <i class="fas fa-code"></i>Technical Details
+          </h3>
+          <p>
+            The system uses advanced facial landmark detection and expression mapping to ensure the swapped face 
+            maintains the original expressions and emotions naturally. Custom color correction algorithms and 
+            lighting adjustment models match the swapped face with the original scene's lighting conditions.
+          </p>
+        </div>
+      </div>
+
+      <a href="../index.html#projects" class="back-button">
+        <i class="fas fa-arrow-left"></i> Back to Portfolio
+      </a>
+    </div>
+  </body>
+</html>

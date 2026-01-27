@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nursing Home Administrator Exam Prep API - Portfolio</title>
+    <link rel="stylesheet" href="project-styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="project-container fade-in">
+      <header class="project-header">
+        <h1 class="project-title">Nursing Home Administrator Exam Prep API</h1>
+        <p class="project-subtitle">
+          AI-Powered RAG System for Certification Preparation
+        </p>
+      </header>
+
+      <div class="project-content">
+        <div class="project-info slide-in-left">
+          <h2 class="section-title">
+            <i class="fas fa-info-circle"></i>Project Overview
+          </h2>
+          <p class="project-description">
+            The
+            <span class="highlight"
+              >Nursing Home Administrator Exam Prep API</span
+            >
+            is an AI-driven backend system designed to help users prepare for
+            the Nursing Home Administrator certification exam. It leverages a
+            <span class="highlight">Retrieval-Augmented Generation (RAG)</span>
+            pipeline built with
+            <span class="highlight">Qdrant vector database</span> and
+            <span class="highlight">OpenAI GPT models</span> to generate dynamic
+            study materials, lessons, quizzes, exams, and flashcards.
+          </p>
+
+          <h3 class="section-title">
+            <i class="fas fa-cogs"></i>Technologies Used
+          </h3>
+          <div class="technologies-grid">
+            <span class="tech-tag">Python (FastAPI)</span>
+            <span class="tech-tag">Qdrant Vector DB</span>
+            <span class="tech-tag">Sentence-Transformers</span>
+            <span class="tech-tag">OpenAI GPT</span>
+            <span class="tech-tag">Swagger UI</span>
+          </div>
+
+          <h3 class="section-title"><i class="fas fa-star"></i>Key Features</h3>
+          <ul class="features-list">
+            <li>
+              <strong>🧩 RAG Pipeline:</strong> Semantic retrieval and GPT-based
+              content generation using Qdrant
+            </li>
+            <li>
+              <strong>📚 Dynamic Learning Content:</strong> Auto-generates
+              lessons, quizzes (5 questions), exams (25 questions), and
+              flashcards
+            </li>
+            <li>
+              <strong>🔄 Auto-indexing:</strong> Automatically updates
+              embeddings when the knowledge base changes
+            </li>
+            <li>
+              <strong>⚡ Caching & Logging:</strong> Intelligent caching for
+              fast response times and centralized logging for monitoring
+            </li>
+            <li>
+              <strong>📖 API Documentation:</strong> Fully documented with
+              Swagger UI
+            </li>
+          </ul>
+
+          <h3 class="section-title">
+            <i class="fas fa-code"></i>API Endpoints
+          </h3>
+          <ul class="features-list">
+            <li><strong>/welcome</strong> - Displays a welcome message</li>
+            <li>
+              <strong>/view-lesson</strong> - Generates personalized lessons
+            </li>
+            <li>
+              <strong>/take-quiz</strong> - Creates short quizzes for quick
+              practice
+            </li>
+            <li>
+              <strong>/take-exam</strong> - Generates full-length mock exams
+            </li>
+            <li>
+              <strong>/flashcards</strong> - Builds flashcards for memory
+              reinforcement
+            </li>
+            <li><strong>/health</strong> - System health check</li>
+            <li><strong>/ping</strong> - Keeps the service active</li>
+          </ul>
+
+          <div class="impact-section">
+            <h3 class="impact-title">Educational Impact</h3>
+            <p>
+              This project showcases the integration of LLMs with vector
+              databases to create adaptive and interactive exam preparation
+              tools, providing a scalable foundation for any AI-powered
+              educational SaaS system.
+            </p>
+          </div>
+        </div>
+
+        <div class="project-media slide-in-right">
+          <h2 class="section-title">
+            <i class="fas fa-images"></i>System Interfaces
+          </h2>
+          <div class="media-gallery">
+            <div class="gallery-item">
+              <img
+                src="../project-details/Nursing/1.png"
+                alt="Project Structure"
+              />
+              <p class="gallery-caption">Project Structure</p>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="../project-details/Nursing/2.png"
+                alt="API Documentation"
+              />
+              <p class="gallery-caption">API Documentation</p>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="../project-details/Nursing/3.png"
+                alt="Lesson Upload 1"
+              />
+              <p class="gallery-caption">Lesson Upload 1</p>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="../project-details/Nursing/4.png"
+                alt="Lesson Upload 2"
+              />
+              <p class="gallery-caption">Lesson Upload 2</p>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="../project-details/Nursing/5.png"
+                alt="Flashcards 1"
+              />
+              <p class="gallery-caption">Flashcards 1</p>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="../project-details/Nursing/6.png"
+                alt="Flashcards 2"
+              />
+              <p class="gallery-caption">Flashcards 2</p>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="../project-details/Nursing/7.png"
+                alt="Quiz Interface"
+              />
+              <p class="gallery-caption">Quiz Interface</p>
+            </div>
+          </div>
+
+          <h3 class="section-title">
+            <i class="fas fa-graduation-cap"></i>Learning Methodology
+          </h3>
+          <p>
+            The system uses semantic search via embeddings from
+            sentence-transformers to retrieve the most relevant content, then
+            generates structured responses through GPT-based text generation.
+            This creates a personalized learning experience tailored to each
+            user's needs and knowledge gaps.
+          </p>
+        </div>
+      </div>
+
+      <a href="../index.html#projects" class="back-button">
+        <i class="fas fa-arrow-left"></i> Back to Portfolio
+      </a>
+    </div>
+  </body>
+</html>

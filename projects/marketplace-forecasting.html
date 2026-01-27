@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marketplace Revenue Forecasting - Portfolio</title>
+    <link rel="stylesheet" href="project-styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="project-container fade-in">
+      <header class="project-header">
+        <h1 class="project-title">
+          Marketplace Revenue & Unit Sold Forecasting
+        </h1>
+        <p class="project-subtitle">
+          Multi-Method Time-Series Analysis for Business Intelligence
+        </p>
+      </header>
+
+      <div class="project-content">
+        <div class="project-info slide-in-left">
+          <h2 class="section-title">
+            <i class="fas fa-info-circle"></i>Project Overview
+          </h2>
+          <p class="project-description">
+            This project focuses on developing a robust, multi-method
+            time-series model to
+            <span class="highlight">forecast daily revenue</span> for various
+            marketplaces. The primary goal was to provide data-driven
+            predictions for short-term revenue (a 3-day forecast) to support
+            operational planning, inventory management, and strategic financial
+            decision-making for each unique marketplace.
+          </p>
+
+          <h3 class="section-title">
+            <i class="fas fa-cogs"></i>Technologies & Methods
+          </h3>
+          <div class="technologies-grid">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Pandas</span>
+            <span class="tech-tag">NumPy</span>
+            <span class="tech-tag">Matplotlib</span>
+            <span class="tech-tag">Time-Series Analysis</span>
+            <span class="tech-tag">Moving Average</span>
+            <span class="tech-tag">Exponential Smoothing</span>
+            <span class="tech-tag">Linear Regression</span>
+          </div>
+
+          <h3 class="section-title">
+            <i class="fas fa-chart-line"></i>Forecasting Models Applied
+          </h3>
+          <ul class="features-list">
+            <li>
+              <strong>Moving Average (MA):</strong> A 7-day rolling average to
+              smooth short-term fluctuations and capture weekly trends
+            </li>
+            <li>
+              <strong>Exponential Smoothing (ESF):</strong> Applies
+              exponentially decreasing weights to older observations with
+              smoothing factor (α) of 0.7
+            </li>
+            <li>
+              <strong>Linear Regression Forecasting (LRF):</strong> A linear
+              trendline fitted to historical daily revenue over time
+            </li>
+          </ul>
+
+          <h3 class="section-title">
+            <i class="fas fa-database"></i>Data Preprocessing
+          </h3>
+          <ul class="features-list">
+            <li>
+              <strong>Data Source:</strong> Historical order data from
+              data_orders.xlsx
+            </li>
+            <li>
+              <strong>Aggregation:</strong> Raw data cleaned and aggregated by
+              order_date to calculate Daily Revenue and Daily Units Sold
+            </li>
+            <li>
+              <strong>Segmentation:</strong> Analysis performed separately for
+              each unique marketplace to ensure highest predictive accuracy
+            </li>
+          </ul>
+
+          <a
+            href="https://www.loom.com/share/aad9ed5bea5b466cb53f73729d9e7d0f"
+            class="video-link"
+            target="_blank"
+          >
+            <i class="fas fa-play-circle"></i> Watch Project Video
+          </a>
+        </div>
+
+        <div class="project-media slide-in-right">
+          <h2 class="section-title">
+            <i class="fas fa-images"></i>Forecasting Visualizations
+          </h2>
+          <div class="media-gallery">
+            <div class="gallery-item">
+              <img
+                src="../project-details/Market1.png"
+                alt="System Interface"
+              />
+              <p class="gallery-caption">System Interface</p>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="../project-details/Market2.png"
+                alt="Revenue Forecast 1"
+              />
+              <p class="gallery-caption">Revenue Forecast 1</p>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="../project-details/Market3.png"
+                alt="Revenue Forecast 2"
+              />
+              <p class="gallery-caption">Revenue Forecast 2</p>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="../project-details/Market4.png"
+                alt="Revenue Forecast 3"
+              />
+              <p class="gallery-caption">Revenue Forecast 3</p>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="../project-details/Market7.png"
+                alt="Revenue Forecast 4"
+              />
+              <p class="gallery-caption">Revenue Forecast 4</p>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="../project-details/Market10.png"
+                alt="Unit Forecast 1"
+              />
+              <p class="gallery-caption">Unit Forecast 1</p>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="../project-details/Market11.png"
+                alt="Unit Forecast 2"
+              />
+              <p class="gallery-caption">Unit Forecast 2</p>
+            </div>
+          </div>
+
+          <div class="impact-section">
+            <h3 class="impact-title">Comparative Analysis Results</h3>
+            <p>
+              The project delivered a comprehensive, comparative forecasting
+              tool, illustrating the trade-offs between models:
+            </p>
+            <ul class="features-list">
+              <li>
+                <strong>Moving Average</strong> provided the smoothest curve,
+                effectively filtering out noise but lagging behind sharp changes
+              </li>
+              <li>
+                <strong>Exponential Smoothing</strong> was the most responsive
+                to recent changes due to the higher smoothing factor
+              </li>
+              <li>
+                <strong>Linear Regression</strong> offered a clear long-term
+                direction, useful for setting overall expectations
+              </li>
+            </ul>
+            <p>
+              The final output included concrete 3-day revenue forecasts for
+              every unique marketplace, providing immediate and actionable
+              insights for business stakeholders.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <a href="../index.html#projects" class="back-button">
+        <i class="fas fa-arrow-left"></i> Back to Portfolio
+      </a>
+    </div>
+  </body>
+</html>
