@@ -1263,6 +1263,7 @@ section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+    align-items: start;
 }
 
 .skill-card {
@@ -1273,8 +1274,9 @@ section {
     transition: all var(--transition-normal);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    min-height: 320px;
+    justify-content: flex-start;
+    min-height: auto;
+    height: 100%;
 }
 
 .skill-card:hover {
@@ -1468,6 +1470,7 @@ section {
     gap: 2rem;
     max-width: 1000px;
     margin: 0 auto;
+    align-items: start;
 }
 
 .project-card {
@@ -1737,6 +1740,7 @@ section {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     margin-bottom: 3rem;
+    align-items: start;
 }
 
 .testimonial-card {
@@ -1830,6 +1834,7 @@ section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1.5rem;
+    align-items: start;
 }
 
 .contact-card {
